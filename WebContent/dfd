@@ -1,0 +1,91 @@
+<filter>
+    <filter-name>MainFilter</filter-name>
+    <filter-class>cg.ncn.TP3.filter.MainFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>MainFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+	
+	<filter>
+    <filter-name>Set Character Encoding</filter-name>
+    <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+        <param-name>ignore</param-name>
+        <param-value>false</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>Set Character Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+
+
+	
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>cg.ncn.TP3.servlets.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>  
+  
+    <servlet>
+  	<servlet-name>LogOut</servlet-name>
+  	<servlet-class>cg.ncn.TP3.servlets.LogOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LogOut</servlet-name>
+  	<url-pattern>/logOut</url-pattern>
+  </servlet-mapping> 
+  
+    <servlet>
+  	<servlet-name>Home</servlet-name>
+  	<servlet-class>cg.ncn.TP3.servlets.Home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Home</servlet-name>
+  	<url-pattern>/menu</url-pattern>
+  </servlet-mapping>
+  
+<servlet>
+  	<servlet-name>CreateClient</servlet-name>
+  	<servlet-class>cg.ncn.TP3.servlets.CreateClient</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>CreateClient</servlet-name>
+  	  	<url-pattern>/createClient</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+  	<servlet-name>CreateCommande</servlet-name>
+  	<servlet-class>cg.ncn.TP3.servlets.CreateCommande</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>CreateCommande</servlet-name>
+  	  	<url-pattern>/createCommande</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+  	<servlet-name>CreationClient</servlet-name>
+  	<servlet-class>cg.ncn.TP3.servlets.CreationClient</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>CreationClient</servlet-name>
+  	  	<url-pattern>/creationClient</url-pattern>
+  </servlet-mapping>  
+  
+ <servlet>
+  	<servlet-name>CreationCommande</servlet-name>
+  	<servlet-class>cg.ncn.TP3.servlets.CreationCommande</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>CreationCommande</servlet-name>
+  	  	<url-pattern>/creationCommande</url-pattern>
+  </servlet-mapping> 

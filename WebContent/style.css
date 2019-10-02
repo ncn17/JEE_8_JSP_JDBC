@@ -1,0 +1,105 @@
+/* Général ------------------------------------------------------------------------------------- */
+
+td,tr {
+	border: 1px solid black;
+	text-align: center;
+	padding: 13px;
+}
+table{
+	border-collapse: collapse;
+	margin: auto;
+}
+
+h2
+{
+	text-align: left;
+	font-weight: normal;
+	margin-left: 5px;
+}
+li {
+	margin:15px;
+	list-style-type: none;
+	font-size: 12px;
+}
+a { width:  100px ; margin: 20px;}
+
+#menu{
+	border: 1px solid blue;
+	height: 220px;
+	padding-left: 15px;
+}
+
+.mail{
+	color: blue;
+	font-weight: bold;
+}
+
+.empty{
+		color: red;
+	font-size: 14px;
+}
+
+.pair{
+	background-color: lightGray;
+	color: blue;
+}
+
+.choice_zone{
+	width: 450px;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-left: 20px;	
+}
+
+#multi{
+	margin-left: 14px;
+}
+
+body, p, legend, label, input {
+    font: normal 8pt verdana, helvetica, sans-serif;
+}
+
+/* Forms --------------------------------------------------------------------------------------- */
+fieldset {
+    padding: 10px;
+    border: 1px #0568CD solid;
+    margin: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0568CD;
+}
+
+form label {
+    float: left;
+    width: 200px;
+    margin: 3px 0px 0px 0px;
+}
+
+form input {
+    margin: 3px 3px 0px 0px;
+    border: 1px #999 solid;
+}
+
+form input.sansLabel {
+    margin-left: 200px;
+}
+
+/* Styles et couleurs -------------------------------------------------------------------------- */
+.requis {
+    color: #c00;
+}
+
+.erreur {
+    color: #900;
+}
+
+.succes {
+    color: #090;
+}
+
+.info {
+    font-style: italic;
+    color: #E8A22B;
+}
